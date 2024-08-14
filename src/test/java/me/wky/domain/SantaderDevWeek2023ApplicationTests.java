@@ -1,4 +1,4 @@
-package me.wky.santader_dev_week_2023;
+package me.wky.domain;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

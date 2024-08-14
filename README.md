@@ -11,12 +11,12 @@ classDiagram
         -List~Card~ cards
         -List~News~ news
     }
-
+[.gitignore](.gitignore)
     class Account {
         -String agency
         -String number
-        -float balance
-        -float limit
+        -BigDecimal balance
+        -BigDecimal limit
     }
 
     class Feature {
@@ -26,7 +26,7 @@ classDiagram
 
     class Card {
         -String number
-        -float limit
+        -BigDecimal limit
     }
 
     class News {

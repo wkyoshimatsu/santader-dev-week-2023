@@ -6,6 +6,10 @@ Diagrama de classes
 classDiagram
     class User {
         -String firstName
+        -Account account
+        -List~Feature~ features
+        -List~Card~ cards
+        -List~News~ news
     }
 
     class Account {
@@ -30,18 +34,9 @@ classDiagram
         -String description
     }
 
-    class BankUser {
-        -User user
-        -Account account
-        -List~Feature~ features
-        -List~Card~ cards
-        -List~News~ news
-    }
-
-    BankUser "1" *-- "1" User
-    BankUser "1" *-- "1" Account
-    BankUser "1" *-- "N" Feature : features*
-    BankUser "1" *-- "N" Card : cards*
-    BankUser "1" *-- "N" News : news*
+    User "1" *-- "1" Account
+    User "1" *-- "N" Feature
+    User "1" *-- "N" Card
+    User "1" *-- "N" News
 
 ```

@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:${Postgres.DATABASE_URL}
-    username: ${PGUSER}
-    password: ${PGPASSWORD}
+    url: jdbc:${{ Postgres.DATABASE_URL }}
+    username: ${{ Postgres.PGUSER }}
+    password: ${{ Postgres.PGPASSWORD }}
   jpa:
     open-in-view: false
     hibernate:

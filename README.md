@@ -11,7 +11,7 @@ classDiagram
         -List~Card~ cards
         -List~News~ news
     }
-[.gitignore](.gitignore)
+
     class Account {
         -String agency
         -String number
